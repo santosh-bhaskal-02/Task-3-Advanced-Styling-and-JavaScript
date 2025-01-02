@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biography of Chhatrapati Shivaji Maharaj</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-title">
+        <h1>Biography</h1>
+      </div>
+      <div class="navbar-links">
+        <a href="#home" class="navbar-link">Home</a>
+        <a href="#about" class="navbar-link">About</a>
+        <a href="#contact" class="navbar-link">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <section class="biography-container">
+        <div class="hero-section">
+          <h2>Chhatrapati Shivaji Maharaj</h2>
+          <img
+            src="https://vajiram-prod.s3.ap-south-1.amazonaws.com/Chhatrapati_Shivaji_Maharaj_c02d6823ba.jpg"
+            alt="Chhatrapati Shivaji Maharaj"
+          />
+        </div>
+        <article class="content">
+          <p>
+            <strong>Birth:</strong> February 19, 1630 (Shivneri Fort, Pune, Maharashtra, India)  
+            <strong>Death:</strong> April 3, 1680 (Raigad Fort, Maharashtra, India)
+          </p>
+          <p>
+            <strong>Introduction:</strong> Chhatrapati Shivaji Maharaj was the founder of the Maratha Empire in western India and one of the most revered leaders in Indian history. Known for his exceptional administrative skills, military strategies, and progressive policies, Shivaji is celebrated as a symbol of courage, justice, and independence.
+          </p>
+          <p>
+            <strong>Early Life:</strong> Shivaji was born to Shahaji Bhosale, a Maratha general, and Jijabai, who played a pivotal role in instilling a sense of justice, devotion, and valor in young Shivaji. His upbringing at Shivneri Fort laid the foundation for his leadership qualities and determination to resist oppression.
+          </p>
+          <p>
+            <strong>Military Achievements:</strong>  
+            Shivaji Maharaj laid the groundwork for the Maratha Empire, challenging the Mughal and Adil Shahi rulers.
+          </p>
+          <ul>
+            <li>Known as the "Father of Indian Navy," Shivaji pioneered guerrilla tactics and the use of naval forces in India. His strategies helped him defeat much larger armies.</li>
+            <li>Shivaji built and captured several forts, including Torna, Rajgad, Raigad, and Sinhagad, turning them into strongholds of Maratha power.</li>
+          </ul>
+          <p>
+            <strong>Legacy:</strong> Shivaji’s coronation as Chhatrapati (monarch) on June 6, 1674, at Raigad Fort marked the formal establishment of the Maratha Empire. His visionary leadership inspired later freedom fighters like Bal Gangadhar Tilak and Veer Savarkar.
+          </p>
+          <p>
+            <strong>Death and Immortality:</strong> Chhatrapati Shivaji Maharaj passed away in 1680, but his ideals and legacy remain immortal. He is not only remembered as a great warrior and statesman but also as a leader who stood for the values of justice, equality, and self-reliance.
+          </p>
+        </article>
+      </section>
+
+      <section id="useful-links">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Shivaji" target="_blank">Shivaji Maharaj - Wikipedia</a></li>
+          <li><a href="https://www.history.com/topics/india/shivaji" target="_blank">Shivaji Maharaj - History Channel</a></li>
+        </ul>
+      </section>
+
+      <!-- Subscribe Section -->
+      <section class="subscribe-section">
+        <h2>Subscribe for Updates</h2>
+        <p>Enter your email below to receive updates about Chhatrapati Shivaji Maharaj and other related topics.</p>
+        <form id="subscribe-form" class="subscribe-form">
+          <input type="email" id="email" placeholder="Enter your email" required />
+          <button type="submit" id="subscribe-button">Subscribe</button>
+        </form>
+      </section>
+    </div>
+
+    <!-- JavaScript for handling subscription -->
+    <script>
+      document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting
+        const email = document.getElementById('email').value;
+        
+        if (email) {
+          alert(`Thank you for subscribing, ${email}!`);
+        } else {
+          alert("Please enter a valid email address.");
+        }
+      });
+    </script>
+  </body>
+</html>
