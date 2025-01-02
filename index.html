@@ -62,8 +62,6 @@
           <li><a href="https://www.history.com/topics/india/shivaji" target="_blank">Shivaji Maharaj - History Channel</a></li>
         </ul>
       </section>
-
-      <!-- Subscribe Section -->
       <section class="subscribe-section">
         <h2>Subscribe for Updates</h2>
         <p>Enter your email below to receive updates about Chhatrapati Shivaji Maharaj and other related topics.</p>
@@ -74,10 +72,9 @@
       </section>
     </div>
 
-    <!-- JavaScript for handling subscription -->
     <script>
       document.getElementById('subscribe-form').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the form from submitting
+        event.preventDefault();
         const email = document.getElementById('email').value;
         
         if (email) {
