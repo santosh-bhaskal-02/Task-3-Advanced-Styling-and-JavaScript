@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">Nature Carousel</div>
+      </nav>
+    </header>
+
+    <div class="carousel">
+      <div class="controls">
+        <button onclick="prevImage()">&#9664;</button>
+        <button onclick="nextImage()">&#9654;</button>
+      </div>
+    </div>
+
+    <div class="add-image">
+      <h3>Add a New Image</h3>
+      <div class="option-selector">
+        <label>
+          <input
+            type="radio"
+            name="image-source"
+            value="url"
+            checked
+            onclick="toggleInput('url')" />
+          Add via URL
+        </label>
+        <label>
+          <input
+            type="radio"
+            name="image-source"
+            value="local"
+            onclick="toggleInput('local')" />
+          Upload Local Image
+        </label>
+      </div>
+
+      <div id="url-input">
+        <input type="text" id="image-url" placeholder="Enter image URL" />
+      </div>
+
+      <div id="file-input" style="display: none">
+        <input type="file" id="local-image" accept="image/*" />
+      </div>
+
+      <button class="addbtn" onclick="addImage()">Add Image</button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

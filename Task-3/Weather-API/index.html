@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header class="header">
+        <h1>🌤️ Weather App</h1>
+      </header>
+
+      <main class="content">
+        <form id="weather-form" class="weather-form">
+          <input
+            type="text"
+            id="city-input"
+            placeholder="Enter city name (e.g., Mumbai)"
+            required />
+          <button type="submit">Get Weather</button>
+        </form>
+
+        <div id="weather-display" class="weather-display"></div>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2025 Weather App - Created by Me</p>
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
